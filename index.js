@@ -9,7 +9,8 @@ function init() {
   // compile and include source
   var formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   // where and when to generate the template
-  document.getElementsByTagName('main')[0].innerHTML = formTemplate({'submitAction': 'createRecipe()'});
+  // document.getElementsByTagName('main')[0].innerHTML = formTemplate({'submitAction': 'createRecipe()'});
+  document.getElementsByTagName("main")[0].innerHTML += fromTemplate;
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
