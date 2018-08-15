@@ -21,7 +21,8 @@
 
     <!-- main form template -->
     <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form action="createRecipe()" id="recipe-form">
+      <form id="recipe-form" action="createRecipe()" >
+      <form id="recipe-form" onsubmit="{{submitAction}};return false;">
         {{> recipeFormPartial }}
       </form>
     </script>
