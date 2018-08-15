@@ -1,6 +1,8 @@
 function init() {
   //put any page initialization/handlebars initialization here
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML);
+  Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML);
+
   Handlebars.registerHelper('displayIngredient', function(ingredients) {
     return new Handlebars.SafeString(ingredients)
   });
