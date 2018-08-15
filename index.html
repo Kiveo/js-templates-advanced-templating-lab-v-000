@@ -27,20 +27,19 @@
     </script>
     <!-- form partial template -->
     <script id="recipe-form-partial" type="text/x-handlebars-template">
-          Name: <input id="name" type="text" value="{{name}}"></br>
-          Description: <input id="description" type="text" value="{{description}}"><br>
-          <h4>Ingredients</h4>
-          {{#each ingredients}}
-          <input name="ingredients" type="text" value="{{this}}"><br>
-          {{else}}
-          <input name="ingredients" type="text"><br>
-          <input name="ingredients" type="text"><br>
-          <input name="ingredients" type="text"><br>
-          <input name="ingredients" type="text"><br>
-          <input name="ingredients" type="text"><br>
-          {{/each}}
-          <input type="submit">
-        </script>
+      <p>Recipe Name: <input type="text" name="recipe_name" value="{{name}}"></p>
+      <p>Description: <input type="text" name="recipe_description" value="{{description}}"/></p>
+      {{#each ingredients}}
+        <p>Ingredient: <input type="text" name="ingredients" value="{{this}}"></p>
+      {{else}}
+        <p>Ingredient 1: <input type="text" name="ingredients" /></p>
+        <p>Ingredient 2: <input type="text" name="ingredients" /></p>
+        <p>Ingredient 3: <input type="text" name="ingredients" /></p>
+        <p>Ingredient 4: <input type="text" name="ingredients" /></p>
+        <p>Ingredient 5: <input type="text" name="ingredients" /></p>
+      {{/each}}
+      <input type="submit" name="submit">
+    </script>
     <!-- recipe-template (edit) -->
     <script id="recipe-template" type="text/x-handlebars-template">
       <!-- should contain the recipe name and an "Edit Recipe" link, and render the recipeDetailsPartial -->
