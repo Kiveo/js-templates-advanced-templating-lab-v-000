@@ -17,5 +17,17 @@
     <script src="node_modules/expect/umd/expect.min.js"></script>
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
+    <!-- template script -->
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      
+    <div class="entry">
+      <h1>{{title}}</h1>
+      <div class="body">
+        {{body}}
+      </div>
+    </div>
+
+    </script>
   </body>
 </html>
