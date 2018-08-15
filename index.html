@@ -21,7 +21,7 @@
 
     <script id="recipe-form-template" type="text/x-handlebars-template">
       <form method="post" action="createRecipe()" id="recipe-form">
-        <p>Recipe Name: </h3><input type="text" name="recipe_name" /></p>
+        <p>Recipe Name: <input type="text" name="recipe_name" value="{{name}}"></p>
         <p>Description: <input type="text" name="recipe_description" /></p>
         <p>Ingredient 1: <input type="text" name="recipe_ingredient1" /></p>
         <p>Ingredient 2: <input type="text" name="recipe_ingredient2" /></p>
